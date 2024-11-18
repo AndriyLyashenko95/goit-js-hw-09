@@ -19,14 +19,17 @@ ul {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 10px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 24px auto;
+  margin: 100px auto;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 .gallery-item {
-  width: 360px;
+  flex-basis: calc(33.33% - 10px);
+  box-sizing: border-box;
 }
 .gallery-link {
   width: 100%;

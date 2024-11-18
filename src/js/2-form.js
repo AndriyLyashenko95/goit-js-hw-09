@@ -26,7 +26,7 @@ const handleSubmit = e => {
 
   if (formData.email !== '' && formData.message !== '') {
     console.log(formData);
-  } else alert('Будь ласка заповніть всі поля');
+  } else alert('Fill please all fields');
   localStorage.removeItem('feedback-form-state');
   formData.email = '';
   formData.message = '';

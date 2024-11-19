@@ -24,14 +24,16 @@ const handleChangeTextarea = e => {
 const handleSubmit = e => {
   e.preventDefault();
 
-  if (formData.email !== '' && formData.message !== '') {
+if (formData.email !== '' && formData.message !== '') {
     console.log(formData);
-  } else alert('Fill please all fields');
-  localStorage.removeItem('feedback-form-state');
-  formData.email = '';
-  formData.message = '';
-  input.value = '';
-  textarea.value = '';
+    localStorage.removeItem('feedback-form-state'); 
+    formData.email = ''; 
+    formData.message = '';
+    input.value = ''; 
+    textarea.value = '';
+  } else {
+    alert('Fill please all fields');
+  }
 };
 
 input.addEventListener('input', handleChangeInput);
